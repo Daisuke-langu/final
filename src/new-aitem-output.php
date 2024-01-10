@@ -4,33 +4,10 @@
 <?php require 'db-connect.php';?>
 <?php
 $pdo=new PDO($connect,USER,PASS);
-if(isset($_SESSION['customer'])){
-    $id=$_SESSION['customer']['id'];
-    $sql=$pdo->prepare('select * from customer where id!=? and login=?');
-    $sql->execute([$id, $_POST['login']]);
-}else {
-    $sql=$pdo->prepare('select * from customer where login=?');
-    $sql->execute([$_POST['login']]);
-}
-if(empty($sql->fetchAll())){
-    if(isset($_SESSION['customer'])){
-        $sql=$pdo->prepare('update customer set name=?, address=?, '.'login=?,password=? where id=?');
-         $sql->execute([
-            $_POST['name'], $_POST['address'],
-            $_POST['login'], $_POST['password'], $id]);
-            $_SESSION['customer']=['id'=>$id,
-            'name'=>$_POST['name'],'address'=>$_POST['address'], 
-            'login'=>$_POST['login'], 'password'=>$_POST['password']];
-            echo 'お客様情報を更新しました。';
-    }else{
-        $sql=$pdo->prepare('insert into customer values(null,?,?,?,?)');
-        $sql->execute([
-                $_POST['name'],$_POST['address'],
-                $_POST['login'], $_POST['password']]);
-                echo 'お客様の情報を登録しました。';
-    }
-} else {
-    echo 'ログイン名がすでに使用されていますので、変更してください。';
-}
-?>
+$sql=$pdo->prepare('insert into vice values(null, ?, ?)');
+if($sql->execute([$_POST['vice_name'], $_POST['h_name']])) {?>
+    <p>追加しました。</p>
+<?php } else { ?>
+        <p>追加に失敗しました。</p>
+<?php } ?>
 <?php require 'footer.php'; ?>
