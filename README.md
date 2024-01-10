@@ -8,4 +8,4 @@
 
 システム名：　　工具管理システム    
 
-URL：　　　　　 https://github.com/Daisuke-langu/final
+URL：　　　　　 
