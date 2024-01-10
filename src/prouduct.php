@@ -23,9 +23,9 @@ foreach ($sql as $row){
     echo'<tr>';
     echo'<td>',$id,'</td>';
     echo'<td>';
-    echo'<a href="detail.php?id=',$id,'">',$row['vice-name'],'</a>';
+    echo'<a href="detail.php?id=',$id,'">',$row['vice_name'],'</a>';
     echo'</td>';
-    echo'<td>',$row['h-name'],'</td>';
+    echo'<td>',$row['h_name'],'</td>';
     echo'</tr>';
 }
 echo'</table>';
