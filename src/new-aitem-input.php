@@ -1,6 +1,7 @@
 <?php session_start();?>
 <?php require 'header.php'; ?>
 <?php require 'menu.php'; ?>
+<link rel="stylesheet" href="css/all.css">
 <p>商品を追加します。</p>
 <form action="new-aitem-output.php" method="post">
     商品名<input type="text" name="vice_name"><br>

@@ -2,6 +2,7 @@
 <?php require 'header.php'; ?>
 <?php require 'menu.php'; ?>
 <?php require 'db-connect.php';?>
+<link rel="stylesheet" href="css/all.css">
 <?php
 $pdo=new PDO($connect,USER,PASS);
 $sql=$pdo->prepare('insert into vice values(null, ?, ?)');

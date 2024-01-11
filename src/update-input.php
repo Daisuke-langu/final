@@ -1,6 +1,7 @@
 <?php require 'header.php'; ?>
 <?php require 'menu.php'; ?>
 <?php require 'db-connect.php';?>
+<link rel="stylesheet" href="css/all.css">
 <?php $pdo=new PDO($connect,USER,PASS);
 foreach($pdo->query('select * from vice') as $row) { ?>
  <form action="update-output.php" method="post">
