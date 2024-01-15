@@ -2,7 +2,7 @@
 <?php require 'menu.php'; ?>
 <?php require 'db-connect.php';?>
 <link rel="stylesheet" href="css/all.css">
-<table>
+<table class="t1">
     <tr><th>商品番号</th><th>工具名</th><th>借りている人物名</th><th></th></tr>
 <?php $pdo=new PDO($connect,USER,PASS);
 foreach($pdo->query('select * from vice') as $row) { ?>

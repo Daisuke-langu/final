@@ -21,6 +21,10 @@ foreach ($sql as $row){
     echo'</td>';
     echo'<td>',$row['h_name'],'</td>'; ?>
     </tr>
+    
 <?php } ?>
 </table>
+<div class="modo">
+      <a href="menu.php">メニューに戻る</a>
+</div>
 <?php require '../chapter7/footer.php'; ?>

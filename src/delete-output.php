@@ -9,5 +9,7 @@ if($sql->execute([$_GET['id']])) { ?>
 <?php } else { ?>
     <p>削除に失敗しました。</p>
 <?php } ?>
-
+<div class="modo">
+      <a href="menu.php">メニューに戻る</a>
+</div>
 <?php require 'footer.php'; ?>

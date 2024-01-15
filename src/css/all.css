@@ -1,9 +1,36 @@
 body {
-    background-color: aqua;
+    background-color: #EEFFFF;
 }
 .t1 {
     text-align: center;
     margin: auto;
-    background-color: black;
-    color: beige;
+    background-color: #999999;
+    color: #ADFF2F;
+}
+.tui {
+    text-align: center;
+    background-color: #999999;
+    color: #ADFF2F;
+    margin: 20px 100px;
+}
+p {
+    text-align: center;
+    color: #FF4500;
+    font-size: large;
+}
+.modo {
+    text-align: right;
+    color: #880000;
+    margin: 100px;
+}
+.mein {
+    
+    text-align: center;
+}
+.mu {
+    margin: 20px;
+}
+img {
+    width: 30px;
+    height: 30px;
 }

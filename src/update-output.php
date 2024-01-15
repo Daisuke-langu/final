@@ -20,4 +20,7 @@ if(empty($_POST['vice_name'])) { ?>
   <?php } else {?>
     <p>更新に失敗しました。</p>
     <?php } ?>
+    <div class="modo">
+      <a href="menu.php">メニューに戻る</a>
+    </div>
 <?php require 'footer.php'; ?>

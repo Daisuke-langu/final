@@ -11,4 +11,7 @@ if($sql->execute([$_POST['vice_name'], $_POST['h_name']])) {?>
 <?php } else { ?>
         <p>追加に失敗しました。</p>
 <?php } ?>
+<div class="modo">
+      <a href="menu.php">メニューに戻る</a>
+</div>
 <?php require 'footer.php'; ?>
