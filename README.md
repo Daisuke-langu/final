@@ -8,4 +8,4 @@
 
 システム名：　　工具管理システム    
 
-URL：　　　　　 
+URL：　　　　　 http://aso2201421.capoo.jp/php2/最終課題/menu.php
