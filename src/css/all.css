@@ -9,14 +9,13 @@ body {
 }
 .tui {
     text-align: center;
-    background-color: #999999;
-    color: #ADFF2F;
+    color: #CC0033;
     margin: 20px 100px;
 }
 p {
     text-align: center;
     color: #FF4500;
-    font-size: large;
+    font-size: 30px;
 }
 .modo {
     text-align: right;

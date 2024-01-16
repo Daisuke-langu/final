@@ -15,11 +15,11 @@ if(isset($_POST['keyword'])){
 foreach ($sql as $row){
     $id=$row['id'];?>
     <tr>
-    <?php echo'<td>',$id,'</td>'; 
-    echo'<td>';
-    echo'<a href="detail.php?id=',$id,'">',$row['vice_name'],'</a>';
-    echo'</td>';
-    echo'<td>',$row['h_name'],'</td>'; ?>
+    <?php echo'<td>',$id,'</td>'; ?>
+    <td>
+    <?php echo $row['vice_name']; ?>
+    </td>
+    <?php echo'<td>',$row['h_name'],'</td>'; ?>
     </tr>
     
 <?php } ?>
